@@ -1,43 +1,5 @@
-// // components/PersonCard.js
 
-// import Image from 'next/image';
-// import styles from './PersonCard.module.css'; 
 import profileImage from '../../images/IMG_2001 copy.jpg'
-// const PersonCard = () => {
-//   return (
-//     <div className={styles.mainPersonImageBlock}>
-//       <Image
-//         // src={profileImage}
-//         alt="photo"
-//         layout="responsive"
-//         width={460}
-//         height={460}
-//         sizes="(max-width: 479px) 100vw, (max-width: 1279px) 250px, 460px"
-     
-//         className={styles.mainPersonImage}
-//       />
-//       <div className={styles.photoOverlay}></div>
-//       <div className={styles.personInfo}>
-//         <h2 className={styles.textWhite}>Ren Nolan</h2>
-//         <div className={styles.personPosition}>Developer</div>
-//         <div className={styles.socialsWrapper}>
-//           <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className={styles.socialIconMainHome}>
-//             <FacebookIcon className={styles.socialIcon} />
-//           </a>
-//           <a href="https://www.dribbble.com/" target="_blank" rel="noopener noreferrer" className={styles.socialIconMainHome}>
-//             <DribbbleIcon className={styles.socialIcon} />
-//           </a>
-//           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className={styles.socialIconMainHome}>
-//             <LinkedinIcon className={styles.socialIcon} />
-//           </a>
-//           <a href="https://behance.net/" target="_blank" rel="noopener noreferrer" className={styles.socialIconMainHome}>
-//             <TwitterIcon className={styles.socialIcon} />
-//           </a>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
 import Image from 'next/image';
 import styles from './PersonCard.module.css'; 
 
@@ -75,7 +37,6 @@ const PersonCard = () => {
   );
 };
 
-// Icon components remain the same...
 
 function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
   return (

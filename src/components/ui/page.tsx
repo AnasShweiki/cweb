@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HomeTabNav from "../../components/ui/navhaeders/navlinks";
 import styles from "../../app/styles.module.css";
-import PersonCard from '../ui/PersonCard/PersonCard';
+import PersonCard from './PersonCard/PersonCard';
 import AnimatedTabs from "../Taps/job/page";
 
 const Component = () => {
