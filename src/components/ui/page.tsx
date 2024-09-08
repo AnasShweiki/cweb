@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Links } from "@/components/ui/navhaeders/navlinks"
 import Image from "next/image"
 import { useRouter } from "next/router"
-
+import iamgeback from '../../Images/629759bce5f0f5ed3d86fe81_bg-image.jpg'
 import styles from '../../app/styles.module.css'
 
 const Component=() =>{
@@ -11,7 +11,8 @@ const Component=() =>{
 
    
   return (
-    <div className={styles.container}>
+    <div className={styles.container }>
+      
  <div className={styles.content}>
                  <div className={styles.headers}>
                         <Links />
@@ -100,6 +101,7 @@ const Component=() =>{
         </div>
       </main>
       </div>
+      
     </div>
   )
 }

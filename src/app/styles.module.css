@@ -1,10 +1,11 @@
 .container {
     background-color: #0f1414;
-    background-image: linear-gradient(#1c1f1f4d, #1c1f1f4d), url(https://cdn.prod.website-files.com/6292458…/629759b…_bg-image.jpg);
+    background-image: linear-gradient(#1c1f1f4d, #1c1f1f4d), url('../Images/629759bce5f0f5ed3d86fe81_bg-image.jpg');
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -13,17 +14,12 @@
 
 .content {
     background-color: var(--primary-dark);
-    display: flex; /* Flexbox for centering */
-    padding: 20px; /* Padding for inner spacing */
-    height: 84vh;
+    display: flex;
+    padding: 20px;
+    height: 60vh;
+    width: 90vh;
     position: relative;
     overflow: hidden;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    
-    
+align-items: center;   
 }
-
