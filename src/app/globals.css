@@ -86,3 +86,43 @@
     @apply font-heading;
   }
 }
+
+/* Small Screens (max-width: 767px) */
+@media (max-width: 767px) {
+  /* تصغير حجم الخط للعناصر العامة مثل العناوين والفقرات */
+  body {
+    font-size: 14px; /* تقليل حجم النص العام */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* تصغير العناوين الكبيرة */
+  }
+
+  h2 {
+    font-size: 1.3rem; /* تصغير العناوين المتوسطة */
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 1.1rem; /* تصغير العناوين الصغيرة */
+  }
+
+  p, span, a, li {
+    font-size: 0.9rem; /* تصغير النصوص الاعتيادية مثل الفقرات والقوائم */
+  }
+
+  .header {
+    font-size: 1.1rem; /* تصغير الخط في الـ header */
+  }
+
+  .downloadButton {
+    font-size: 0.85rem; /* تصغير حجم النص في الأزرار */
+  }
+
+  .homeTabLink {
+    font-size: 0.9rem; /* تصغير حجم النص في الروابط */
+  }
+
+  .homeRn {
+    font-size: 1rem; /* تصغير الخط في قسم الـ home */
+  }
+}

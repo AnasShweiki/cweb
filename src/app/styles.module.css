@@ -144,9 +144,10 @@
 
 /* Small Screens (max-width: 767px) */
 @media (max-width: 767px) {
+  
+  
   .container {
-    padding: 8px;
-
+display: flex;
 
   }
 
