@@ -1,4 +1,5 @@
 /* General styles */
+
 .container {
   background-image: linear-gradient(#2f39394d, #1c1f1f4d), url(../components/images/629759bce5f0f5ed3d86fe81_bg-image.jpg);
   background-position: 0 0, 50%;
@@ -133,6 +134,7 @@
   .PersonCard {
     display: none; /* Hide PersonCard on medium screens */
   }
+  
 
   .Tabs {
     margin-top: 10px;
@@ -144,36 +146,47 @@
 @media (max-width: 767px) {
   .container {
     padding: 8px;
+
+
   }
 
   .content {
     flex-direction: row; /* Stack items vertically */
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 100%;
+   display: flex;    
   }
 
   .PersonCard {
     display: none; /* Hide PersonCard on small screens */
   }
+ 
+  .homeTabLink {
+    height: 100%;
 
+  }
   .Tabs {
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-left: 0;
+
   }
 
   .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex;    
+    flex-wrap: wrap-reverse;
+    
 
-    margin-bottom: 20px; /* Space between header and content */
+
   }
 }
 
 /* Extra Small Screens (max-width: 479px) */
 @media (max-width: 479px) {
-  .container {
+  .content {
+    flex-direction: row; /* Stack items vertically */
+    width: 100%;
+    height: 100%;
     padding: 4px;
   }
 
@@ -197,9 +210,6 @@
     margin: 5px;
   }
 
-  .homeRn {
-    font-size: 18px;
-  }
 
   .downloadButton {
     margin-top: 20px;

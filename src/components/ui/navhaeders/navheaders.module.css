@@ -22,6 +22,7 @@
   transform: scale(1.1); /* Slightly enlarges the icon */
   filter: brightness(1.2); /* Slightly brightens the icon */
 }
+
 .homeRn {
   font-size: 24px;
   font-weight: bold;
@@ -70,4 +71,32 @@
       margin-top: 220px;
     transform: scale(1.1); /* Slightly enlarges the icon */
     filter: brightness(1.2); /* Slightly brightens the icon */
+  }
+
+  @media (max-width: 587px ) {
+  
+   .logoNav{
+     
+    margin-bottom:-150px;
+
+   }
+   
+    
+
+  }
+  @media (max-height: 787px ) {
+    .homeRn{
+      padding: 10px;
+      
+  
+  
+    }
+   .logoNav{
+     
+    margin-bottom:-250px;
+
+   }
+   
+    
+
   }
