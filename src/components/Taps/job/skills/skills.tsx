@@ -40,7 +40,7 @@ const RSkills = () => {
         <div className={styles.basicInformationDivider}>/</div>
         <div className={styles.basicInformation}>2 years in coding</div>
         <div className={styles.basicInformationDivider}>/</div>
-        <div className={styles.basicInformation}>master's degree</div>
+        <div className={styles.basicInformation}>masters degree</div>
         </div>
       </div>
       <p className={styles.homeMainInfo}>
