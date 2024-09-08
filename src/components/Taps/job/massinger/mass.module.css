@@ -1,0 +1,117 @@
+.tabPane {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .tabContentWrapper {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  
+  .homeMapWrapper {
+    /* Your styles here */
+  }
+  
+  .home-contact-grid, .main-home-collection-list {
+    grid-template-columns: 1fr;
+}
+.home-contact-grid {
+grid-column-gap: 30px;
+grid-row-gap: 0px;
+grid-template-rows: auto auto;
+grid-template-columns: 1fr 1fr;
+grid-auto-columns: 1fr;
+display: grid;
+}
+.homecontactgrid {
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}  
+  .homeContactItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .homeContactLink {
+    color: inherit;
+    text-decoration: none;
+  }
+  .homecontacticon {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+  .homeDivider {
+    margin: 2rem 0;
+  }
+  
+  .homeSectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .homeContactForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .homeContactTextField,
+  .homeContactMessageField {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    padding: 0.5rem 1rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .successMessage,
+  .errorMessage {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .successMessage {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .errorMessage {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  .homesectiontitle {
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.h3 {
+    color: var(--primary-dark);
+    margin-top: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.p {
+    color: var(--paragraph-grey);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}

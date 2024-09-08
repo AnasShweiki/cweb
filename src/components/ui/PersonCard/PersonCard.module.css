@@ -1,0 +1,69 @@
+/* components/PersonCard.module.css */
+
+.mainPersonImageBlock {
+  width: 250px;
+  height: 90vh;
+  position: absolute;
+  box-shadow: 0 0 30px #00000080;
+}
+
+.mainPersonImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+}
+
+.photoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.personInfo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.textWhite {
+  color: white;
+}
+
+.personPosition {
+  color: lightgray;
+}
+
+.socialsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socialIconMainHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+@media screen and (min-width: 1280px) {
+  .mainPersonImageBlock {
+    width: 460px;
+  }
+}

@@ -1,0 +1,115 @@
+/* components/AboutMe.module.css */
+.tabContentWrapper {
+    display: block;
+    overflow-y: auto;
+  }
+  
+  .pageTitle {
+    color: var(--white);
+    font-family: Roboto, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2em;
+  }
+  
+  .basicInformationWrapper {
+    color: brown;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    display: flex;
+  }
+  
+  .basicInformation {
+    margin: 0 0.5rem;
+  }
+  
+  .basicInformationDivider {
+    margin: 0 0.5rem;
+  }
+  
+  .homeMainInfo {
+
+    color: var(--paragraph-grey);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 1rem;
+
+  }
+  
+  .homeDivider {
+    background-color: var(--dark-gray-50);
+    width: 100%;
+    height: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .homeSectionTitle {
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  .homeServicesCard h5 {
+    color: var(--text-white);
+  }
+  
+  .homeServicesCard p {
+    color: var(--paragraph-grey);
+  }
+  .homeServicesWrapper {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 500px; /* Adjust based on your design needs */
+  }
+  .homeServices {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+  
+  .homeServicesCard {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    margin: 0.5rem;
+    flex: 1;
+    max-width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .homeServicesCard img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .textWhite {
+    color: #fff;
+  }
+  
+
+  .homeServicesWrapper {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 500px; /* Adjust based on your design needs */
+  }
+  
+.pText{
+    color:#8d8e8f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}

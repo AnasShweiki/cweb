@@ -1,0 +1,131 @@
+/* Reset div margin and padding */
+.div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox layout for tabs */
+.wTabMenu {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+/* Style for the tab panes */
+.tabPane {
+    padding: 0;
+}
+
+/* Wrapper styling */
+.tabContentWrapper {
+    padding: 30px;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.homeportfoliocollectionlist {
+    column-count: 2;
+    column-gap: 30px;
+    margin-top: 10px;
+}
+/* Page title styling */
+.pageTitle {
+    color: #ebe1e1; /* Darker text color for better readability */
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Tab link styles */
+.tabLinkPortfolio {
+    color: #333; /* Darker text color for better readability */
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* General tab link styles */
+.wTabLink {
+    text-align: center;
+    cursor: pointer;
+    color: #555;
+    background-color: #e0e0e0;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+/* Hover effect for tab links */
+.wTabLink:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+/* Active tab link styling */
+.wTabLinkActive {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Tab pane styles */
+.wTabPane {
+    display: none;
+}
+
+.wTabPaneActive {
+    display: block;
+}
+
+/* Portfolio item styling */
+.home-portfolio-item {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for portfolio items */
+.home-portfolio-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover overlay styling */
+.home-portfolio-item-hover-overlay {
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent overlay */
+    color: #fff; /* White text for contrast */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    inset: 0;
+}
+
+/* Overlay visibility on hover */
+.home-portfolio-item:hover .home-portfolio-item-hover-overlay {
+    opacity: 1;
+}
+
+/* Link and category styling in the overlay */
+.home-portfolio-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.home-portfolio-category {
+    font-size: 14px;
+    color: #ddd;
+}

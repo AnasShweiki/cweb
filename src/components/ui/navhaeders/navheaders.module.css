@@ -1,13 +1,73 @@
-.container {
-  z-index: 990;
-  background-color: var(--primary-dark);  flex-direction: column;
-  flex: none;
-  justify-content: center;
-  width: 80px;
+.cont {
   height: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
   display: flex;
-  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center; /* Changed from space-evenly for center alignment */
+  align-items: center;
+}
+.homeTabNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
 
+}
+.homeTabNav:hover{
+  transform: scale(1.1); /* Slightly enlarges the icon */
+  filter: brightness(1.2); /* Slightly brightens the icon */
+}
+
+.homeRn:hover{
+  transform: scale(1.1); /* Slightly enlarges the icon */
+  filter: brightness(1.2); /* Slightly brightens the icon */
+}
+.homeRn {
+  font-size: 24px;
+  font-weight: bold;
+  color: brown;
+  padding: 5px;
+  margin: 5px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.homeTab {
+  display: flex;
+  margin: 10px;
+  padding-bottom: 200px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.homeTabLink {
+  display: inline-block;
+  margin: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.homeTabLink:hover {
+  transform: scale(1.1); /* Slightly enlarges the icon */
+  filter: brightness(1.2); /* Slightly brightens the icon */
+}
+
+.current {
+  color: red; /* Example style for the active link */
+}
+
+.logoNav {
+  display:flex;
+  padding-bottom: 280px;
+
+}
+.downloadButton {
+  margin-top: 250px;
+
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect for the download button */
+
+
+.downloadButton:hover {
+      margin-top: 220px;
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    filter: brightness(1.2); /* Slightly brightens the icon */
   }

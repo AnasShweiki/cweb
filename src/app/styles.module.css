@@ -1,25 +1,157 @@
 .container {
-    background-color: #0f1414;
-    background-image: linear-gradient(#1c1f1f4d, #1c1f1f4d), url('../Images/629759bce5f0f5ed3d86fe81_bg-image.jpg');
+    background-image: linear-gradient(#2f39394d, #1c1f1f4d), url(../components/images/629759bce5f0f5ed3d86fe81_bg-image.jpg);
     background-position: 0 0, 50%;
-    background-repeat: repeat, no-repeat;
     background-size: auto, cover;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
+
 }
+.header{
+
+
+align-items: flex-start;
+}
+
+
 
 .content {
     background-color: var(--primary-dark);
-    display: flex;
+    display: flex; 
     padding: 20px;
-    height: 60vh;
-    width: 90vh;
+    height: 86vh;
+    width: 120vh;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.PersonCard{
+  z-index: 999;
+  background-color: var(--primary-dark);
+  width: 280px;
+  height: 90vh;
+  /* inset: 3vh auto auto 40px; */
+  box-shadow: 0 0 40px #00000080;
+}
+.Tabs{
+width: 550px;
+height: 80vh;
+margin-left: 210px;
+overflow-y: auto;
+max-height: 1000px;
+
+}
+
+/* components/HomeTabNav.module.css */
+.homeTabNav {
+  display: flex;
+  align-items: center;
+}
+.homeTabLink {
+  display: inline-block;
+  margin: 0 10px;
+}
+.current {
+  /* Styles for the active link */
+  color: red; /* Example style */
+}
+.logoNav {
+  margin-left: auto;
+  font-size: 24px;
+  font-weight: bold;
+}
+.downloadButton {
+  margin-left: 20px;
+}
+
+.headers {
+  display: flex;
+  align-items: center;
+}
+
+.containerr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contents {
+    border-left: 3px solid #000;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .subtitle {
+    font-weight: bold;
+  }
+  
+  .heading {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .subtitleGray {
+    color: gray;
+  }
+  
+
+.homeProgressBarWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .homeProgressBarItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .homeProgressBarTitle {
+    font-weight: bold;
+  }
+  
+  .homeProgressBarNumber {
+    font-weight: bold;
+  }
+  
+  .progressBarWrapper {
+    position: relative;
+    width: 100%;
+    background-color: #e11b1b; /* Gray line color */
+    height: 8px; /* Height of the progress bar */
+  }
+  
+  .progressBarGrayLine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #d0d0d0; /* Background color */
+  }
+  
+  .progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #00c3ea; /* Progress bar color */
+    transition: width 0.5s ease;
+  }
+
+  .pageSc{
+    background-color:red;
+    display: flex; /* Flexbox for centering */
+    padding: 20px; /* Padding for inner spacing */
+    height: 86vh;
+    width: 100vh;
     position: relative;
     overflow: hidden;
     flex-direction: row;
-align-items: center;   
-}
+    align-items: center;
+    justify-content: center;
+  }

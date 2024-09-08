@@ -1,0 +1,193 @@
+/* General Styles */
+.basicInformationWrapper {
+    max-width: 100%;
+    overflow-x: auto; /* Prevent horizontal overflow */
+  }
+  
+.tabContentWrapper {
+    display: block;
+    overflow-y: auto;
+    padding: 2rem; /* Increased padding for better spacing */
+  }
+  
+  .pageTitle {
+    color: #ffffff; /* White for contrast */
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem; /* Prominent title size */
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center; /* Center align for modern design */
+    margin-bottom: 1.5rem; /* Adequate spacing below title */
+  }
+
+ 
+  .basicInformation {
+    height: 40px;
+    border-radius: 30px;
+    color:brown; /* White text for readability */
+    padding: 0.8rem ; /* Padding to make it stand out */
+    font-weight: 600; /* Slightly lighter font weight */
+    display: flex; /* Flexbox for alignment within the item */
+    align-items: center; /* Center align text vertically */
+    justify-content: center; /* Center align text horizontally */
+  }
+  
+  .basicInformationDivider {
+    color: brown; /* Consistent brown color */
+    font-size: 1.2rem; /* Slightly larger font size for visibility */
+  }
+  
+  .basicInformationWrapper {
+    display: block;
+  }
+  .basicType{
+flex-direction: row;
+display: flex;
+
+  }
+  
+  
+  .homeMainInfo {
+    color: #e0e0e0; /* Light gray for contrast */
+    margin: 1.5rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    text-align: center; /* Center align for consistency */
+  }
+  
+  .homeDivider {
+    background-color: #e0e0e0; /* Light gray for divider */
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0; /* Spacing for visual separation */
+  }
+  
+  .homeskillstitlewrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align skills section title */
+    gap: 10px; /* Space between icon and title */
+    margin-bottom: 1rem; /* Space below skills section */
+  }
+  
+  .homeSectionTitle {
+    color: #ffffff; /* White for contrast */
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .homeProgressBarNumber {
+    color: brown; /* Consistent brown color */
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .homeProgressBarWrapper {
+    margin-bottom: 1.5rem; /* Spacing between progress bar items */
+  }
+  
+  .homeProgressBarItem {
+    margin-bottom: 1rem; /* Spacing between progress bar items */
+  }
+  
+  .homeProgressBarTitle {
+    font-weight: bold;
+    color: #e0e0e0; /* Light gray for text */
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .progressBarWrapper {
+    background-color: #444; /* Darker background for progress bar */
+    border-radius: 4px;
+    height: 6px; /* Taller progress bar for better visibility */
+    overflow: hidden;
+  }
+  
+  .progressBarGrayLine {
+    background-color: #444; /* Darker background for progress bar */
+  }
+  
+  .progressBar-91 {
+    background-color: #dc502d;
+  }
+  
+  .progressBar-82 {
+    background-color: #76c7c0;
+  }
+  
+  .progressBar-85 {
+    background-color: #ffab00;
+  }
+  
+  .progressBar-98 {
+    background-color: brown; /* Consistent brown color */
+  }
+  
+  /* Work experience and education sections */
+  .homeWorkWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between work blocks */
+  }
+  
+  .homeWorkBlock {
+    margin-bottom: 2rem; /* Space below work blocks */
+  }
+  
+  .homeWorkTitleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and title */
+    margin-bottom: 1rem; /* Space below title */
+  }
+  
+  .homeWorkTitleIcon {
+    color: brown; /* Consistent brown color */
+  }
+  
+  .homeSectionSubtitle {
+    font-size: 1.5rem;
+    color: brown; /* Consistent brown color */
+    font-weight: 600;
+    margin: 0; /* Remove default margins */
+  }
+  
+  .homeWorkContent {
+    margin-bottom: 1.5rem; /* Spacing between content items */
+  }
+  
+  .homeWorkSubtitle {
+    font-weight: bold;
+    color: brown; /* Consistent brown color */
+  }
+  
+  .homeWorkHeading {
+    font-size: 1.2rem;
+    color: brown; /* Consistent brown color */
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .homeWorkSubtitleGray {
+    color: #888; /* Darker gray for secondary text */
+  }
+  
+  /* Paragraph text styling */
+  .pText {
+    color: #e0e0e0; /* Light gray for readability */
+    margin: 0.5rem 0; /* Adequate margin for spacing */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+  
