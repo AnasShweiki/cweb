@@ -116,7 +116,8 @@
   /* تصغير حجم الخط للعناصر العامة مثل العناوين والفقرات */
   
   .homeMainInfo {
-    font-size: 1.5rem; /* تصغير العناوين الكبيرة */
+    font-size: 1.5rem;
+    flex-wrap: wrap /* تصغير العناوين الكبيرة */
   }
 
   .h2 {
@@ -124,11 +125,14 @@
   }
 
   .basicInformation,.h4,.h5,.h6 {
-    font-size: 1.0rem; /* تصغير العناوين الصغيرة */
+    font-size: 1.0rem;
+    flex-wrap: wrap /* تصغير العناوين الصغيرة */
   }
 
   .p,.homeMainInfo {
-    font-size: 0.9rem; /* تصغير النصوص الاعتيادية مثل الفقرات والقوائم */
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    display: flex;/* تصغير النصوص الاعتيادية مثل الفقرات والقوائم */
   }
 
   .header {

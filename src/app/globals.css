@@ -95,15 +95,18 @@
   }
 
   h1 {
-    font-size: 1.5rem; /* تصغير العناوين الكبيرة */
+    font-size: 1.5rem; 
+    flex-wrap: wrap;/* تصغير العناوين الكبيرة */
   }
 
   h2 {
-    font-size: 1.3rem; /* تصغير العناوين المتوسطة */
+    font-size: 1.3rem; 
+    flex-wrap: wrap/* تصغير العناوين المتوسطة */
   }
 
   h3, h4, h5, h6 {
-    font-size: 1.1rem; /* تصغير العناوين الصغيرة */
+    font-size: 1.1rem;
+    flex-wrap: wrap /* تصغير العناوين الصغيرة */
   }
 
   p, span, a, li {
