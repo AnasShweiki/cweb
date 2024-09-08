@@ -1,157 +1,205 @@
+/* General styles */
 .container {
-    background-image: linear-gradient(#2f39394d, #1c1f1f4d), url(../components/images/629759bce5f0f5ed3d86fe81_bg-image.jpg);
-    background-position: 0 0, 50%;
-    background-size: auto, cover;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-
+  background-image: linear-gradient(#2f39394d, #1c1f1f4d), url(../components/images/629759bce5f0f5ed3d86fe81_bg-image.jpg);
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px; /* Added padding for small screens */
 }
-.header{
-
-
-align-items: flex-start;
-}
-
-
 
 .content {
-    background-color: var(--primary-dark);
-    display: flex; 
-    padding: 20px;
-    height: 86vh;
-    width: 120vh;
-    overflow: hidden;
-    flex-direction: row;
-    align-items: center;
-    
+  background-color: var(--primary-dark);
+  display: flex;
+  padding: 20px;
+  height: 86vh;
+  width: 90vw; /* Changed to responsive width */
+  max-width: 1200px; /* Added max-width for larger screens */
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Added gap for spacing */
 }
-.PersonCard{
+
+.PersonCard {
   z-index: 999;
   background-color: var(--primary-dark);
   width: 280px;
   height: 90vh;
-  /* inset: 3vh auto auto 40px; */
   box-shadow: 0 0 40px #00000080;
-}
-.Tabs{
-width: 550px;
-height: 80vh;
-margin-left: 210px;
-overflow-y: auto;
-max-height: 1000px;
-
+  display: none; /* Hide by default for smaller screens */
 }
 
-/* components/HomeTabNav.module.css */
-.homeTabNav {
-  display: flex;
-  align-items: center;
-}
-.homeTabLink {
-  display: inline-block;
-  margin: 0 10px;
-}
-.current {
-  /* Styles for the active link */
-  color: red; /* Example style */
-}
-.logoNav {
-  margin-left: auto;
-  font-size: 24px;
-  font-weight: bold;
-}
-.downloadButton {
-  margin-left: 20px;
+.Tabs {
+  width: 100%; /* Adjusted to be responsive */
+  max-width: 600px; /* Added max-width */
+  height: 80vh;
+  overflow-y: scroll; /* Enable vertical scroll */
+  margin-left: auto; /* Adjusted for centering */
 }
 
-.headers {
-  display: flex;
-  align-items: center;
+/* Hide scrollbar but keep scrolling functionality */
+.Tabs::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+  background: transparent; /* Optional: Ensure background is transparent */
 }
 
-.containerr {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .contents {
-    border-left: 3px solid #000;
-    padding-left: 20px;
-    position: relative;
-  }
-  
-  .subtitle {
-    font-weight: bold;
-  }
-  
-  .heading {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-  
-  .subtitleGray {
-    color: gray;
-  }
-  
+.Tabs {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Edge */
+}
 
-.homeProgressBarWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .homeProgressBarItem {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  
-  .homeProgressBarTitle {
-    font-weight: bold;
-  }
-  
-  .homeProgressBarNumber {
-    font-weight: bold;
-  }
-  
-  .progressBarWrapper {
-    position: relative;
-    width: 100%;
-    background-color: #e11b1b; /* Gray line color */
-    height: 8px; /* Height of the progress bar */
-  }
-  
-  .progressBarGrayLine {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background-color: #d0d0d0; /* Background color */
-  }
-  
-  .progressBar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #00c3ea; /* Progress bar color */
-    transition: width 0.5s ease;
+/* Large Screens (min-width: 1280px) */
+@media (min-width: 1280px) {
+  .container {
+    padding: 32px;
   }
 
-  .pageSc{
-    background-color:red;
-    display: flex; /* Flexbox for centering */
-    padding: 20px; /* Padding for inner spacing */
-    height: 86vh;
-    width: 100vh;
-    position: relative;
-    overflow: hidden;
+  .content {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
   }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .PersonCard {
+    display: block; /* Show PersonCard on large screens */
+    margin: 10px;
+  }
+
+  .Tabs {
+    width: calc(100% - 280px); /* Adjust width to fit next to PersonCard */
+    margin-right: 10px;
+  }
+}
+
+/* Extra Large Screens (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .container {
+    padding: 40px;
+  }
+
+  .content {
+    max-width: 1200px;
+  }
+
+  .header {
+    font-size: 1.75rem;
+  }
+
+  .PersonCard {
+    width: calc(100% - 320px); /* Adjust width to fit next to PersonCard */
+    margin: 20px;
+  }
+
+  .Tabs {
+    margin-top: 30px;
+  }
+}
+
+/* Ultra Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .container {
+    padding: 48px;
+  }
+
+  .content {
+    max-width: 1400px;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+
+  .Tabs {
+    margin-top: 40px;
+  }
+}
+
+/* Medium Screens (max-width: 991px) */
+@media (max-width: 991px) {
+  .container {
+    padding: 12px;
+  }
+
+  .header {
+    font-size: 1.25rem;
+  }
+
+  .PersonCard {
+    display: none; /* Hide PersonCard on medium screens */
+  }
+
+  .Tabs {
+    margin-top: 10px;
+    height: auto; /* Allow height to adjust based on content */
+  }
+}
+
+/* Small Screens (max-width: 767px) */
+@media (max-width: 767px) {
+  .container {
+    padding: 8px;
+  }
+
+  .content {
+    flex-direction: column; /* Stack items vertically */
+    width: 100vw;
+    height: auto;
+  }
+
+  .PersonCard {
+    display: none; /* Hide PersonCard on small screens */
+  }
+
+  .Tabs {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space between header and content */
+  }
+}
+
+/* Extra Small Screens (max-width: 479px) */
+@media (max-width: 479px) {
+  .container {
+    padding: 4px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space between header and content */
+  }
+
+  .PersonCard {
+    display: none; /* Hide PersonCard on extra small screens */
+  }
+
+  .Tabs {
+    margin-top: 4px;
+  }
+
+  .homeTabLink {
+    margin: 5px;
+  }
+
+  .homeRn {
+    font-size: 18px;
+  }
+
+  .downloadButton {
+    margin-top: 20px;
+  }
+}
