@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './djob.module.css'; // Ensure you create this CSS module
+import Image from 'next/image';
 
 const AboutMe = () => {
   return (
@@ -46,7 +47,7 @@ Prolific Full-Stack Web Developer with a strong passion for metrics and performa
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.5 }}
         >
-          <img 
+          <Image
             src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/629790b4c074fa3b9e428c12_Icon-dev-1.svg" 
             alt="icon" 
             className={styles.image}
@@ -60,7 +61,7 @@ Prolific Full-Stack Web Developer with a strong passion for metrics and performa
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.5 }}
         >
-          <img 
+          <Image 
             src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/629791c8ef43ef30384de0ff_Icon-rocket-1.svg" 
             alt="icon" 
             className={styles.image}
@@ -74,7 +75,7 @@ Prolific Full-Stack Web Developer with a strong passion for metrics and performa
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.5 }}
         >
-          <img 
+          <Image 
             src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/629791c877a862e06c90e658_Icon-data-1.svg" 
             alt="icon" 
             className={styles.image}
@@ -88,7 +89,7 @@ Prolific Full-Stack Web Developer with a strong passion for metrics and performa
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.5 }}
         >
-          <img 
+          <Image 
             src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/629791c52a46d66b1ac51fb5_Icon-shield-1.svg" 
             alt="icon" 
             className={styles.image}

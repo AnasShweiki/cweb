@@ -2,6 +2,7 @@
 import { NextPage } from 'next';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const [formStatus, setFormStatus] = useState<'success' | 'error' | null>(null);
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
             transition={{ duration: 0.5 }}
             className="map-preview-wrapper"
           >
-            <img
+            <Image
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298d084ad802b3d81d365d9_Subtle%20Greyscale%20Map%20-%20Snazzy%20Maps%20-%20Free%20Styles%20for%20Google%20Maps%202022-06-02%2017-59-04%20(1).png"
               alt="map"
               className="map-preview"
@@ -45,7 +46,7 @@ const Home: NextPage = () => {
 
         <div className="home-contact-grid">
           <div className="home-contact-item">
-            <img
+            <Image
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298da2d568493427a841108_Icon-map-1.svg"
               alt="icon"
               className="home-contact-icon"
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
             <p>Israel-Jerusalem</p>
           </div>
           <div className="home-contact-item">
-            <img
+            <Image
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298da2cfbbdfd2014c09177_icon-mail-1.svg"
               alt="icon"
               className="home-contact-icon"
@@ -63,7 +64,7 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className="home-contact-item">
-            <img
+            <Image
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298da2edb57d0397cfa0ce7_icon-phone-1.svg"
               alt="icon"
               className="home-contact-icon"
