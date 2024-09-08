@@ -147,7 +147,7 @@
   }
 
   .content {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Stack items vertically */
     width: 100vw;
     height: auto;
   }
@@ -164,8 +164,9 @@
 
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+
     margin-bottom: 20px; /* Space between header and content */
   }
 }
@@ -178,7 +179,7 @@
 
   .header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-bottom: 20px; /* Space between header and content */
   }
@@ -189,6 +190,7 @@
 
   .Tabs {
     margin-top: 4px;
+
   }
 
   .homeTabLink {
