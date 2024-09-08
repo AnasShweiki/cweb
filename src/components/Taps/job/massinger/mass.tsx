@@ -1,4 +1,3 @@
-// pages/index.tsx
 import { NextPage } from 'next';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -23,8 +22,8 @@ const Home: NextPage = () => {
     <>
       <div className="tab-content-wrapper">
         <p>
-        If you have any questions regarding your dealings with me, please feel free to contact me at the above address, email address or telephone number.
-       </p>
+          If you have any questions regarding your dealings with me, please feel free to contact me at the above address, email address or telephone number.
+        </p>
 
         <div className="home-map-wrapper">
           <motion.div
@@ -37,6 +36,10 @@ const Home: NextPage = () => {
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298d084ad802b3d81d365d9_Subtle%20Greyscale%20Map%20-%20Snazzy%20Maps%20-%20Free%20Styles%20for%20Google%20Maps%202022-06-02%2017-59-04%20(1).png"
               alt="map"
               className="map-preview"
+              width={800}  // Add the width of the image
+              height={330} // Add the height of the image
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4W7wAAAABJRU5ErkJggg==" // Placeholder data URL
             />
           </motion.div>
           <div className="main-map w-widget w-widget-map">
@@ -50,6 +53,10 @@ const Home: NextPage = () => {
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298da2d568493427a841108_Icon-map-1.svg"
               alt="icon"
               className="home-contact-icon"
+              width={24}  // Add the width of the image
+              height={24} // Add the height of the image
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgIGhlaWdodD0iMTAwJSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2Utbm9uZGVzPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1kYXRhLXJlYWQtdG9saXplPSJub25lIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMTAwIDExMCI+PHBhdGggZD0iTTE1LDEyTDAsNkw3LDUuNUM3LDIuNTk1LDUuNjA5LDAsNkM1LDEuMjc5LDcuMDczLDEuMzc5LDksMTMgQzkuMTg5LDExLjY0OSw4LjE1MSwxMywxNi45MTkiIGZpbGw9IiMwMDAwMDAiLz48L3N2Zz4=" // Placeholder data URL
             />
             <p>Israel-Jerusalem</p>
           </div>
@@ -58,6 +65,10 @@ const Home: NextPage = () => {
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298da2cfbbdfd2014c09177_icon-mail-1.svg"
               alt="icon"
               className="home-contact-icon"
+              width={24}  // Add the width of the image
+              height={24} // Add the height of the image
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2Utbm9uZGVzPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1kYXRhLXJlYWQtdG9saXplPSJub25lIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgNDAgNDAiPjxwYXRoIGQ9Ik00LDI4IEM0LDI4LDI4LDI4LDI4LDI4IEM0LDI4LDI0LDI0IiwgMCwwLDI4LDE2IiBzdHJva2U9IiM0NDQ0NDQiIHN0cm9rZS13aWR0aD0iMCIgc3Ryb2tlLWxpbmVjYXAtY2hhcmFjdGVyPSJyb3VuZCIgc3Ryb2tlLWRhc2hhcmFjdGVyPSJyb3VuZCIgc3Ryb2tlLW9wYWNpdHktbGVuZ3RoPSIxIiBzdHJva2Utb3BhY2l0eS1sZW5ndGg9IjEiIHN0cm9rZS1vcGFjaXR5LWxpbmVjYXAtc2VsZWN0b3I9InNldmVuIEluZGVudGl0eSBsaW5lIiBzdHJva2Utb3BhY2l0eS1jb21wbGV4aXR5PSJkYXNoIiBzdHJva2Utb3BhY2l0eS1tb3ZlbWVudC1zdHJva2U9IjAiIHN0cm9rZS1vcGFjaXR5LWxpbmVjYXAtbG9uZ2l0dWQ9IjF4IiBzdHJva2Utb3BhY2l0eS1tZXRob2Q9Im1vcmUgc2h1cnQiLz48L3N2Zz4=" // Placeholder data URL
             />
             <p>
               <a href="mailto:dani.r@mail.com" className="home-contact-link">anas.sh017@gmail.com</a>
@@ -68,6 +79,10 @@ const Home: NextPage = () => {
               src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/6298da2edb57d0397cfa0ce7_icon-phone-1.svg"
               alt="icon"
               className="home-contact-icon"
+              width={24}  // Add the width of the image
+              height={24} // Add the height of the image
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS1taXppbmc9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1kYXRhLXJlYWQtdG9saXplPSJub25lIiBzdHJva2Utb3BhY2l0eS1zY2FsZWRjYW5vPSJub25lIiBzdHJva2Utb3BhY2l0eS1tZXRob2Q9InNob3J0IiBzdHJva2Utb3BhY2l0eS1sZW5ndGg9IjEiIHN0cm9rZS1vcGFjaXR5LWxpbmVjYXAtbG9uZ2l0dWQ9IjB4IiBzdHJva2Utb3BhY2l0eS1tZXRob2Q9InVubG9uZyIgc3Ryb2tlLXJhbmdlPSJtYSIgc3Ryb2tlLXJhbmdlPSJtaS1yYXYiIHN0cm9rZS1vcGFjaXR5LWxpbmVjYXAtc2VsZWN0b3I9InNldmVuIiBzdHJva2Utb3BhY2l0eS1sZW5ndGg9IjIiIHN0cm9rZS1kYXNoYXJndGhpbnI9ImF1dG8iLz48L3N2Zz4=" // Placeholder data URL
             />
             <p>
               <a href="tel:2567761614" className="home-contact-link">0584627070</a>
