@@ -5,11 +5,11 @@ import { motion } from "framer-motion"
 import styles from '../app/styles.module.css'
 function Page() {
   return (
-    <div className='flex items-center min-h-screen'>
-       {/* <div className={styles.headers}>
+<div className='flex items-center justify-center min-h-screen w-full'>
+{/* <div className={styles.headers}>
           <Links />
         </div> */}
-      <Component />
+      <Component  />
       </div>
   );
 }

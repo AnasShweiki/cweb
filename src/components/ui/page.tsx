@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import HomeTabNav from "../../components/ui/navhaeders/navlinks";
 import styles from "../../app/styles.module.css";
 import PersonCard from './PersonCard/PersonCardd';
@@ -10,7 +10,18 @@ const Component = () => {
   const handleTabChange = (key:string) => {
     setSelectedTab(key);
   };
+  const [width, setWidth] = useState(0); // Initialize width to 0
 
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  console.log(`The width of the screen is ${width}px`);
   return (
     <div className={styles.container}>
       <div className={styles.content}>

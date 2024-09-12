@@ -24,15 +24,14 @@
   align-items: center;
   gap: 20px; /* Added gap for spacing */
 }
-
 .PersonCard {
   z-index: 999;
   background-color: var(--primary-dark);
   width: 280px;
   height: 90vh;
   box-shadow: 0 0 40px #00000080;
-  display: none; /* Hide by default for smaller screens */
 }
+
 
 .Tabs {
   width: 100%; /* Adjusted to be responsive */
@@ -54,166 +53,125 @@
 }
 
 /* Large Screens (min-width: 1280px) */
-@media (min-width: 1280px) {
+/* For small tablets (up to 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
   .container {
-    padding: 32px;
+    padding: 25px; /* Increased padding for small tablets */
   }
 
   .content {
-    flex-direction: row;
+    max-width: 100%px;
   }
 
   .header {
-    font-size: 1.5rem;
+    font-size: 1.1rem; /* Slightly larger font size for small tablets */
   }
 
   .PersonCard {
-    display: block; /* Show PersonCard on large screens */
-    margin: 10px;
+   display: none;
   }
 
   .Tabs {
-    width: calc(100% - 280px); /* Adjust width to fit next to PersonCard */
-    margin-right: 10px;
+    margin-top: 15px; /* Increased margin for small tablets */
+  }
+}
+/* For tablets (600px to 768px) */
+@media (min-width: 301px) and (max-width: 855px) {
+  
+  .container {
+    flex: content;
+
+
+  }
+
+  .content {
+    display: flex; /* Change to flex layout on smaller screens */
+    flex-direction: row; /* Stack cards vertically */
+    gap: 20px; /* Space between the cards */
+  }
+  .header {
+    width: 15%; /* Ensure cards take full width on smaller screens */
+    margin: 0.5rem 0; /* Vertical margin for spacing between stacked cards */
+    gap: 20px; /* Space between the cards */
+
+    
+  }
+
+  /* Add a new media query to target the specific width */
+    .PersonCard {
+      display: none;
+    }
+
+  .Tabs {
+    gap: 20px; /* Space between the cards */
+
+  }
+}
+/* For small desktops (768px to 1024px) */
+@media (min-width: 855px) and (max-width: 1024px) {
+  .container {
+    padding: 50px; /* Padding for extra-large desktops */
+  }
+
+  .content {
+    max-width: 1300px; /* Max width for extra-large desktops */
+  }
+
+  .header {
+    font-size: 2rem; /* Larger font size for extra-large desktops */
+  }
+
+  .PersonCard {
+    width: calc(290% - 1120px); /* Specific width for extra-large desktops */
+  }
+
+  .Tabs {
+    margin-top: 35px; /* Increased margin for extra-large desktops */
   }
 }
 
-/* Extra Large Screens (min-width: 1440px) */
+/* For large desktops (1024px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1430px) {
+  .container {
+    padding: 50px; /* Padding for extra-large desktops */
+  }
+
+  .content {
+    max-width: 1300px; /* Max width for extra-large desktops */
+  }
+
+  .header {
+    font-size: 2rem; /* Larger font size for extra-large desktops */
+  }
+
+  .PersonCard {
+    width: calc(280% - 1440px); /* Specific width for extra-large desktops */
+  }
+
+  .Tabs {
+    margin-top: 35px; /* Increased margin for extra-large desktops */
+  }
+}
+
+/* For extra-large desktops (1440px and up) */
 @media (min-width: 1440px) {
   .container {
-    padding: 40px;
+    padding: 50px; /* Padding for extra-large desktops */
   }
 
   .content {
-    max-width: 1200px;
+    max-width: 1440px; /* Max width for extra-large desktops */
   }
 
   .header {
-    font-size: 1.75rem;
+    font-size: 2rem; /* Larger font size for extra-large desktops */
   }
 
   .PersonCard {
-    width: calc(100% - 320px); /* Adjust width to fit next to PersonCard */
-    margin: 20px;
+    width: calc(280% - 2000px); /* Specific width for extra-large desktops */
   }
 
   .Tabs {
-    margin-top: 30px;
-  }
-}
-
-/* Ultra Large Screens (min-width: 1920px) */
-@media (min-width: 1920px) {
-  .container {
-    padding: 48px;
-  }
-
-  .content {
-    max-width: 1400px;
-  }
-
-  .header {
-    font-size: 2rem;
-  }
-
-  .Tabs {
-    margin-top: 40px;
-  }
-}
-
-/* Medium Screens (max-width: 991px) */
-@media (max-width: 991px) {
-  .container {
-    padding: 12px;
-  }
-
-  .header {
-    font-size: 1.25rem;
-  }
-
-  .PersonCard {
-    display: none; /* Hide PersonCard on medium screens */
-  }
-  
-
-  .Tabs {
-    margin-top: 10px;
-    height: auto; /* Allow height to adjust based on content */
-  }
-}
-
-/* Small Screens (max-width: 767px) */
-@media (max-width: 767px) {
-  
-  
-  .container {
-display: flex;
-
-
-  }
-
-  .content {
-    flex-direction: row; /* Stack items vertically */
-    width: 100%;
-    height: 100%;
-   display: flex;    
-  }
-
-  .PersonCard {
-    display: none; /* Hide PersonCard on small screens */
-  }
- 
-  .homeTabLink {
-    height: 100%;
-
-  }
-  .Tabs {
-    width: 100%;
-    height: 100%;
-    margin-left: 0;
-
-  }
-
-  .header {
-    display: flex;    
-    flex-wrap: wrap-reverse;
-    
-
-
-  }
-}
-
-/* Extra Small Screens (max-width: 479px) */
-@media (max-width: 479px) {
-  .content {
-    flex-direction: row; /* Stack items vertically */
-    width: 100%;
-    height: 100%;
-    padding: 4px;
-  }
-
-  .header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px; /* Space between header and content */
-  }
-
-  .PersonCard {
-    display: none; /* Hide PersonCard on extra small screens */
-  }
-
-  .Tabs {
-    margin-top: 4px;
-
-  }
-
-  .homeTabLink {
-    margin: 5px;
-  }
-
-
-  .downloadButton {
-    margin-top: 20px;
+    margin-top: 35px; /* Increased margin for extra-large desktops */
   }
 }

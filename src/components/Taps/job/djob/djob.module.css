@@ -61,6 +61,7 @@
   
   .homeServicesCard p {
     color: var(--paragraph-grey);
+ 
   }
   .homeServicesWrapper {
     overflow-y: auto; /* Enable vertical scrolling */
@@ -86,6 +87,7 @@
     max-width: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
   }
   
   .homeServicesCard img {
@@ -111,43 +113,34 @@
     font-family: Roboto, sans-serif;
     font-size: 15px;
     font-weight: 400;
-    line-height: 1.5em;
-}@media (max-width: 767px) {
-  /* تصغير حجم الخط للعناصر العامة مثل العناوين والفقرات */
-  
-  .homeMainInfo {
-    font-size: 1.5rem;
-    flex-wrap: wrap /* تصغير العناوين الكبيرة */
+    line-height: 1.5em
+
+}
+
+@media (max-width: 768px) {
+  .homeServices {
+    display: flex; /* Change to flex layout on smaller screens */
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Space between the cards */
   }
 
-  .h2 {
-    font-size: 1.3rem; /* تصغير العناوين المتوسطة */
+  .homeServicesCard {
+    width: 100%; /* Ensure cards take full width on smaller screens */
+    margin: 0.5rem 0; /* Vertical margin for spacing between stacked cards */
   }
-
-  .basicInformation,.h4,.h5,.h6 {
-    font-size: 1.0rem;
-    flex-wrap: wrap /* تصغير العناوين الصغيرة */
+  .basicInformationWrapper {
+    align-items: stretch;
+    justify-content: stretch;
+    flex-wrap:wrap;
+    width: 100%px; /* make it stretch horizontally */
+    font-size: medium;
+    
   }
-
-  .p,.homeMainInfo {
-    font-size: 0.9rem;
-    flex-wrap: wrap;
-    display: flex;/* تصغير النصوص الاعتيادية مثل الفقرات والقوائم */
-  }
-
-  .header {
-    font-size: 1.1rem; /* تصغير الخط في الـ header */
-  }
-
-  .downloadButton {
-    font-size: 0.85rem; /* تصغير حجم النص في الأزرار */
-  }
-
-  .homeTabLink {
-    font-size: 0.9rem; /* تصغير حجم النص في الروابط */
-  }
-
-  .homeRn {
-    font-size: 1rem; /* تصغير الخط في قسم الـ home */
+  .pageTitle{
+    color: var(--white);
+    font-family: Roboto, sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2em;
   }
 }

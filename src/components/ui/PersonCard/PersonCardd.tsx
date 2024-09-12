@@ -7,13 +7,16 @@ const PersonCard = () => {
   return (
     <div className={styles.mainPersonImageBlock}>
       <Image
-         src={profileImage}
-
+        src={profileImage}
         alt="photo"
         layout="fill"
         objectFit="cover"
         className={styles.mainPersonImage}
       />
+      <div className={styles.cimage}> 
+
+     
+    
       <div className={styles.photoOverlay}></div>
       <div className={styles.personInfo}>
         <h2 className={styles.textWhite}>Ren Nolan</h2>
@@ -31,6 +34,7 @@ const PersonCard = () => {
           <a href="https://behance.net/" target="_blank" rel="noopener noreferrer" className={styles.socialIconMainHome}>
             <TwitterIcon className={styles.socialIcon} />
           </a>
+          </div>
         </div>
       </div>
     </div>

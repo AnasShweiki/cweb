@@ -35,14 +35,12 @@ const RSkills = () => {
         AnasShweiki
       </motion.div>
       <div className={styles.basicInformationWrapper}>
-        <div className={styles.basicType}>
-        <div className={styles.basicInformation}>1 years in design</div>
+        <div className={styles.basicInformation}>1 year in design</div>
         <div className={styles.basicInformationDivider}>/</div>
-        <div className={styles.basicInformation}>2 years in coding</div>
+        <div className={styles.basicInformation}>2 years Incoding</div>
         <div className={styles.basicInformationDivider}>/</div>
-        <div className={styles.basicInformation}>masters degree</div>
+        <div className={styles.basicInformation}>1 year in Midlevel</div>
         </div>
-      </div>
       <p className={styles.homeMainInfo}>
         Web Developer with 2 years of experience in designing and developing user interfaces, testing, debugging, and training staff within eCommerce technologies. Proven ability in optimizing web functionality that improves data retrieval and workflow efficiencies.
       </p>
