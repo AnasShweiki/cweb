@@ -5,7 +5,7 @@ import PersonCard from './PersonCard/PersonCardd';
 import AnimatedTabs from "../Taps/job/page";
 
 const Component = () => {
-  const [selectedTab, setSelectedTab] = useState('photos'); // Default tab
+  const [selectedTab, setSelectedTab] = useState('about-me'); // Default tab
 
   const handleTabChange = (key:string) => {
     setSelectedTab(key);

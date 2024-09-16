@@ -129,3 +129,31 @@
     font-size: 14px;
     color: #ddd;
 }
+
+@media (max-width: 768px) {
+    .homeServices {
+      display: flex; /* Change to flex layout on smaller screens */
+      flex-direction: column; /* Stack cards vertically */
+      gap: 20px; /* Space between the cards */
+    }
+  
+    .homeServicesCard {
+      width: 100%; /* Ensure cards take full width on smaller screens */
+      margin: 0.5rem 0; /* Vertical margin for spacing between stacked cards */
+    }
+    .basicInformationWrapper {
+      align-items: stretch;
+      justify-content: stretch;
+      flex-wrap:wrap;
+      width: 100%px; /* make it stretch horizontally */
+      font-size: medium;
+      
+    }
+    .pageTitle{
+      color: var(--white);
+      font-family: Roboto, sans-serif;
+      font-size: 46px;
+      font-weight: 700;
+      line-height: 1.2em;
+    }
+  }
