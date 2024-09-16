@@ -47,10 +47,11 @@ const HomeTabNav: FC<HomeTabNavProps> = ({ onTabChange }) => {
           />
         </Link>
       </div>
-      <a href="/" className={styles.downloadButton}>
+      <a href="/" className={styles.downloadButton1}>
         <Image 
           src="https://cdn.prod.website-files.com/6292458ea6c91805d3cb2506/62972bd0ecfe8300b1f7c114_Icon-download-1.svg" 
           alt="Download Icon" 
+          className={styles.downloadButton}
           width={24} 
           height={24}
         />
