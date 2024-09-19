@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Image from 'next/image';
 import emailjs from 'emailjs-com';
-
+import styles from './mass.module.css'; // Ensure you create this CSS module
 const Home: NextPage = () => {
   const [formStatus, setFormStatus] = useState<'success' | 'error' | null>(null);
 
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
            <motion.input
                     type="submit"
                    value="Send Message"
-                    className="submit-button"
+                    className={styles.submitbutton}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                                      />
