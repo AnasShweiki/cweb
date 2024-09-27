@@ -58,7 +58,7 @@
   padding-bottom: 280px;
 
 }
-.downloadButton1 {
+.downloadButton {
   margin-top: 250px;
 
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -66,9 +66,7 @@
 
 /* Hover effect for the download button */
 
-.downloadButton{
 
-}
 .downloadButton:hover {
       margin-top: 220px;
     transform: scale(1.1); /* Slightly enlarges the icon */
