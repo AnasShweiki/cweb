@@ -67,9 +67,9 @@ const PortfolioTabs: React.FC<PortfolioTabsProps> = ({ items }) => {
                           />
                           <div className="home-portfolio-item-hover-overlay">
                             <Link href={item.href} legacyBehavior>
-                              <a className="home-portfolio-name">'   '</a>
+                              <a className="home-portfolio-name">()</a>
                             </Link>
-                            <div className="home-portfolio-category">' ' </div>
+                            <div className="home-portfolio-category">{}</div>
                           </div>
                         </div>
                       </div>
