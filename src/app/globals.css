@@ -4,8 +4,9 @@
 
 @layer base {
   :root {
- 
-      --primary-dark: #1c1e1f;
+    --primary-dark: #1c1e1f;
+
+      /* --primary-dark: #ffffff; */
       --paragraph-grey: #8d8e8f;
       --primary: #d62222;
       --dark-gray: #afafaf;

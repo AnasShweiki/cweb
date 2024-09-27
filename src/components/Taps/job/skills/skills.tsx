@@ -32,7 +32,7 @@ const RSkills = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        AnasShweiki
+            
       </motion.div>
       <div className={styles.basicInformationWrapper}>
         <div className={styles.basicInformation}>1 year in design</div>
