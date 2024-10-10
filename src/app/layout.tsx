@@ -1,4 +1,4 @@
-"use client"; // Ensure this directive is at the top
+"use client"; 
 
 import { IBM_Plex_Mono } from 'next/font/google';
 import { cn } from '@/lib/utils';
